@@ -1,0 +1,112 @@
+body {
+    background-image: url("/images/fondo.jpg");
+    font-size: 14px;
+    color: white;
+}
+#logo{
+    width: 120px;
+    height: 120px;
+}
+#barra{
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color:black ;
+    width: 100%;
+    height: 120px;
+}
+h1{
+    margin-top: 30px;
+    text-align: center;
+}
+h2{
+    margin-top: 20px;
+    text-indent: 20px;
+}
+section{
+    margin-left: 15px;
+    background-color: black;
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: white 1px solid;
+    margin-bottom: 30px;
+}
+.card-body{
+    padding: 0px;
+    overflow: scroll;
+}
+section p{
+    margin-left: 20px;
+    margin-right: 15px;
+    font-size: 14px;
+    text-indent: 20px;
+}
+section h2{
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: center;
+}
+section h3{
+    margin-top: 15px;
+    text-indent: 25px;
+}
+nav a, nav li{
+    list-style-type: none;
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+nav{
+    margin-left: 75%;
+    margin-top: 50px;
+    position: fixed;
+    
+}
+Section ul li{
+     text-indent: 10px;
+     margin-left: 5px;
+     margin-right: 5px;
+ }
+ table{
+     background-color: black;
+    color: white;
+    border-collapse: collapse;
+ }
+ td{
+     opacity: 0.8;
+     border: 1px solid white;
+ }
+fieldset{
+    text-align: center;
+    justify-content: center;
+    border-bottom: 2px solid grey;
+}
+fieldset legend{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+#Gameinfo th{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 17px;
+}
+#Gameinfo td{
+    font-size: 16px;
+}
+#Gameinfo table{
+    width: 700px;
+    text-align: center;
+    margin:auto ;
+}
+.class-form ,label{
+    margin-top: 10px;
+
+}
+
+input[type="submit" i]{
+    margin-top: 20px;
+    margin-left: 90px;
+}

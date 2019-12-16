@@ -1,0 +1,237 @@
+body {
+    margin-top: 0px;
+    padding: 0px;
+    background-repeat: repeat-y;
+    background-image: url("images/fondo.jpg");
+    background-size: 100% ;
+    font-size: 14px;
+    color: white;
+}
+#logo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    
+}
+header{
+    margin-top: 0px;
+}
+#barra{
+    margin-top: 0px;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    border-bottom: 4px solid white;
+}
+h1{
+    text-align: center;
+    text-indent: 10px;
+}
+#titulo{
+    padding-top: 40px;
+    text-align: center;
+    padding-left: 20px;
+}
+h2{
+    margin-top: 50px;
+    text-align: right;
+    margin-right: 320px;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+    margin-left: 15px;
+    background-color: black;
+    width: 80%;
+    border-radius: 10px;
+    border: white 1px solid;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+.card-body{
+    padding: 0px;
+    overflow: scroll;
+}
+.card-header{
+    background: #140920;
+}
+section p{
+    margin-left: 20px;
+    margin-right: 15px;
+    font-size: 14px;
+    text-indent: 20px;
+}
+section h2{
+    margin-top: 0px;
+    margin-left: 0px;
+    color: chocolate;
+    text-align: center;
+    text-indent: 20px;
+    
+}
+section h3{
+    color: #33689B;
+    margin-top: 15px;
+    text-indent: 20px;
+}
+nav a, nav li{
+    text-decoration: none;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+nav{
+    height: 450px;
+    width: 70px;
+    margin-top: 0px;
+    background-color:#191E29;
+    margin-left: 93%;
+    margin-top: 4%;
+    position: fixed;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+Section ul li{
+     text-indent: 10px;
+     margin-left: 5px;
+     margin-right: 5px;
+ }
+ table{
+    background-color: black;
+    color: white;
+    border-collapse: collapse;
+ }
+ ul,li{
+     margin-right: 10px;
+ }
+ td{
+     opacity: 0.8;
+     border: 1px solid white;
+ }
+fieldset{
+    text-align: center;
+    justify-content: center;
+    border-bottom: 2px solid grey;
+}
+fieldset legend{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+#Gameinfo th{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 17px;
+}
+#Gameinfo td{
+    font-size: 16px;
+}
+#Gameinfo table{
+    width: 700px;
+    text-align: center;
+    margin:auto ;
+}
+#Gameinfo p{
+    padding: 0px;
+    margin-left: 15px;
+}
+.class-form ,label{
+    margin-top: 10px;
+}
+
+input[type="submit" i]{
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.btn-link{
+    margin-left: 40px;
+    color: white;
+}
+li{
+    padding-bottom: 0px;
+}
+#divSignature{
+    border: 1px solid white;
+}
+#Contact p{
+    text-indent: 0px;
+    justify-content: center;
+}
+
+@media  only screen and (orientation:portrait) and (max-width:414px){
+    h1{
+        font-size: 22px;
+    }
+    #titulo{
+        font-size: 24px;
+        padding-left: 56px;
+    }
+    #logo{
+        top: 8px;
+        left: 5px;
+        width: 80px;
+        height: 80px;
+    }
+    h2{
+        margin-top: 30px;
+        font-size: 20px;
+        margin-right: 70px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+    nav{
+        margin-top: 70px;
+        width: 50px;
+        margin-left: 85%;
+        height: 340px;
+    }
+    img {
+        width: 20px;
+    }
+    nav a, nav li{
+        padding-bottom: 20px; 
+}
+
+}
+@media only screen  and (max-width:1200px) and (min-width:667px) {
+    #logo{
+        width: 85px;
+        height: 85px;
+        top: 5px;
+        left: 5px;
+    }
+    #titulo{
+        font-size: 24px;
+        text-align: center;
+        padding-left: 20px;
+    }
+    h2{
+        margin-right: 140px;
+    }
+    nav{
+        height: 250px;
+        width: 50px;
+        top: 80px;
+        right: 10px;
+    }
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    .btn-link{
+        margin-left: 100px;
+    }
+    li{
+        padding-bottom: 0px;
+    }
+    nav a, nav li{
+        text-decoration: none;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+
+}

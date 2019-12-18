@@ -43,28 +43,33 @@ que debe hacer cuando el dispositivo este ofline -->
 <nav>
     <ul class="nav flex-column">
         <li class="nav-item">
-            <a href="#Upcoming" id="a" class="nav-link"><img src="images/icons/Recurso 24.png" alt="home" onclick="show()"></a>
+            <a href="#Upcoming" id="a" class="nav-link"><img src="images/icons/Recurso 24.png" alt="home"
+                    onclick="mostrar('Upcoming')"></a>
         </li>
         <li class="nav-item">
-            <a href="#AnchorAbout" id="a" class="nav-link" ><img src="images/icons/Recurso 23.png" alt="about"> </a>
+            <a href="#AnchorAbout" id="a" class="nav-link"><img src="images/icons/Recurso 23.png" alt="about"
+                    onclick="mostrar('About')"> </a>
         </li>
         <li class="nav-item">
             <a href="#AnchorRegistration" id="a" class="nav-link"><img src="images/icons/Recurso 22.png"
-                    alt="registration"></a>
+                    alt="registration" onclick="mostrar('Registration')"></a>
         </li>
         <li class="nav-item">
-            <a href="#AnchorGameinfo" id="a" class="nav-link"><img src="images/icons/Recurso 19.png" alt="schedule"></a>
+            <a href="#AnchorGameinfo" id="a" class="nav-link"><img src="images/icons/Recurso 19.png" alt="schedule"
+                    onclick="mostrar('Gameinfo')"></a>
         </li>
         <li class="nav-item">
-            <a href="#AnchorRules" id="a" class="nav-link"><img src="images/icons/Recurso 21.png" alt="rules"></a>
+            <a href="#AnchorRules" id="a" class="nav-link"><img src="images/icons/Recurso 21.png" alt="rules"
+                    onclick="mostrar('Rules')"></a>
         </li>
         <li class="nav-item">
-            <a href="#AnchorContact" id="a" class="nav-link"><img src="images/icons/Recurso 20.png" alt="contact"></a>
+            <a href="#AnchorContact" id="a" class="nav-link"><img src="images/icons/Recurso 20.png" alt="contact"
+                    onclick="mostrar('Contact')"></a>
         </li>
     </ul>
 </nav>
 
-<div id="Upcoming">
+<div id="Upcoming" class="pages">
     <h2>Upcoming Events</h2>
     <a name="Upcoming" id="a"></a>
     <section>
@@ -79,7 +84,7 @@ que debe hacer cuando el dispositivo este ofline -->
     </section>
 
 </div>
-<div id="About">
+<div id="About" class="hidepages pages">
 
     <h2>About us</h2>
     <a name="AnchorAbout" id="a"></a>
@@ -109,7 +114,7 @@ que debe hacer cuando el dispositivo este ofline -->
 </div>
 
 
-<div id="Registration">
+<div id="Registration" class="hidepages pages">
 
     <h2>Registration form</h2>
     <a name="AnchorRegistration" id="a"></a>
@@ -306,7 +311,7 @@ que debe hacer cuando el dispositivo este ofline -->
     </section>
 </div>
 
-<div id="Gameinfo">
+<div id="Gameinfo" class="hidepages pages">
     <a name="AnchorGameinfo" id="a"></a>
     <h2>Fall Schedule</h2>
     <section id="table">
@@ -469,7 +474,7 @@ que debe hacer cuando el dispositivo este ofline -->
                 </address>
     </section>
 </div>
-<div id="Rules">
+<div id="Rules" class="hidepages pages">
     <h2>Rules</h2>
     <section>
         <a name="AnchorRules" id="a"></a>
@@ -749,7 +754,7 @@ que debe hacer cuando el dispositivo este ofline -->
         </ul>
     </section>
 </div>
-<div id="Contact">
+<div id="Contact" class="hidepages pages">
     <h2>Contact Us</h2>
     <section>
         <a name="AnchorContact" id="a"></a>
@@ -768,6 +773,7 @@ que debe hacer cuando el dispositivo este ofline -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+<script src="functions.js"></script>
 </body>
 
 </html

@@ -40,6 +40,9 @@ h2{
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.hidepages{
+    display: none;
+}
 section{
     margin-left: 15px;
     background-color: black;
@@ -183,6 +186,9 @@ li{
     p{
         font-size: 16px;
     }
+    .hidepages{
+        display: none;
+    }
     nav{
         margin-top: 70px;
         width: 50px;
@@ -211,6 +217,9 @@ li{
     }
     h2{
         margin-right: 140px;
+    }
+    .hidepages{
+        display: none;
     }
     nav{
         height: 250px;

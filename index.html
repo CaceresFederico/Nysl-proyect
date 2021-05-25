@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cáceres Federico">
+    <meta name="keywords" content="NYSL web app, HTML5, CSS3, Botstrap, JS">
+    <meta name="description" content="The NYSL Homepage">
+    <!-- Esconder la barra URL en Android, Chrome - iPhone, Safari -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Android icon -->
+    <link rel="shortcut icon" sizes="128x128" href="img/nysl_logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="img/nysl_logo.png">
+    <!-- Apple icon -->
+    <link rel="apple-touch-icon" href="img/nysl_logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/nysl_logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/nysl_logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/nysl_logo.png">
+    <!-- Roboto font regular 400 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <!-- Botstrap CSS 5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <title>NYSL Web App</title>
+</head>
+
+<body>
+    <div id="upDownButton">
+        <div class="container-fluid">
+            <button id="upButton" class="btn upDownButton">up</button>
+        </div>
+        <div class="container-fluid pt-2">
+            <button id="downButton" class="btn upDownButton">down</button>
+        </div>
+    </div>
+
+    <header>
+        <!-- RESPONSIVE NAV -->
+        <nav class="navbar navbar-expand-sm ">
+            <div class="container-fluid">
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="showHidePage('upcoming')" aria-current="page"
+                                href="#">upcoming</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="showHidePage('about')">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="showHidePage('register')">register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="showHidePage('games')">games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="showHidePage('rules')">rules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="showHidePage('contact')">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3">
+                        <a href="index.html"><img src="img/nysl_logo.png" id="logo" alt="logoNyslApp"></a>
+                    </div>
+                    <div class="col-6">
+                        <h1 id="titulo">UPCOMING</h1>
+                    </div>
+                    <div class="col-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TO DO: 
+    XX CHANGE DYNAMICALLY THE SECTION IN HEADER 
+    XX ADD MORE SPACES BETWEEN TEXT ELEMENT
+    XX FIX TABLE SHOW 
+    XX FIX ACCORDION WIDTH
+    XX ADD GO TOP AND GO BOTTOM BUTTON
+    XX ADD GOOGLE MAP API IN CONTACT
+    ADD SMOOTHS TRANSITIONS TO TEXT
+    ADD LOGIN WITH FIREBASE
+
+    -->
+
+
+    <!-- MAIN -->
+    <div id="main">
+        <div id="upcoming" class="pages">
+            <div>
+                <h2>August 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sunt delectus obcaecati consequatur
+                    porro ea totam in quam consequuntur quos distinctio accusantium numquam eveniet optio provident,
+                    minima dignissimos maxime voluptas!</p>
+                <h2>August 16</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sunt delectus obcaecati consequatur
+                    porro ea totam in quam consequuntur quos distinctio accusantium numquam eveniet optio provident,
+                    minima dignissimos maxime voluptas!</p>
+                <h2>September 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sunt delectus obcaecati consequatur
+                    porro ea totam in quam consequuntur quos distinctio accusantium numquam eveniet optio provident,
+                    minima dignissimos maxime voluptas!</p>
+            </div>
+        </div>
+
+        <div id="about" class="hidepages pages">
+            <div>
+                <h2>Mission</h2>
+                <p>To support young athletes living in Chicago's northside neighborhoods, who have an interest in
+                    learning
+                    and
+                    playing soccer, with opportunities to learn and practice skills related to the game of soccer,
+                    specifically those
+                    skills around team cooperation and good sportsmanship.</p>
+
+                <h2>Vision</h2>
+                <p>The Northside Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes
+                    through
+                    the
+                    building of character, self-discipline, and leadership.</p>
+
+                <h2>General Information</h2>
+                <p>The Northside Youth Soccer League was established in 1996 to provide athletes residing in Chicago's
+                    northside
+                    neighborhoods an environment in which to learn and play soccer. To be a member of NYSL, you must be
+                    between the
+                    ages of 4 - 12 and reside in a Chicago northside neighborhood. NYSL is run by a small full-time
+                    staff,
+                    and relies
+                    on the generous volunteer time of parents and previous league members.</p>
+            </div>
+        </div>
+
+        <div id="register" class="hidepages pages">
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label for="first_name">Player's First Name:</label>
+                        <input type="text" name="first_name" class="form-control space" id="first_name">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" name="last_name" class="form-control space" id="last_name" />
+                        <label for="street_address">Street Address:</label>
+                        <input type="text" name="street_address" class="form-control space" id="street_address" />
+                        <label for="city">City:</label>
+                        <input type="text" name="city" class="form-control space" id="city" />
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" name="zip" class="form-control space" id="zip" />
+                        <label for="birth_date">Birth Date (mm/dd/yyyy):</label>
+                        <input type="text" name="birth_date" class="form-control space" id="birth_date" />
+                        <label for="parent_guardian">Parent/Guardian Name:</label>
+                        <input type="text" name="parent_guardian" class="form-control space" id="parent_guardian" />
+                        <label for="contact_phone">Contact Phone:</label>
+                        <input type="text" name="contact_phone" class="form-control space" id="contact_phone" />
+                        <label for="contact_email">Contact Email:</label>
+                        <input type="text" name="contact_email" class="form-control space" id="contact_email"
+                            placeholder="name@example.com" />
+                    </div>
+                    <fieldset>
+                        <legend>Gender:</legend>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" value="female" />
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" value="male" />
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Grade:</legend>
+                        <label for="pre_school">Pre-School</label>
+                        <input type="radio" name="grade" id="pre_school" value="pre_school" />
+                        <label for="1st">1st</label>
+                        <input type="radio" name="grade" id="1st" value="1st" />
+                        <label for="2nd">2nd</label>
+                        <input type="radio" name="grade" id="2nd" value="2nd" />
+                        <label for="3rd">3rd</label>
+                        <input type="radio" name="grade" id="3rd" value="3rd" />
+                        <label for="4th">4th</label>
+                        <input type="radio" name="grade" id="4th" value="4th" />
+                        <label for="5th">5th</label>
+                        <input type="radio" name="grade" id="5th" value="5th" />
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Which elementary schools do you live near?</legend>
+                        <label for="school_1" class="impinfo">First Closest School:</label>
+                        <select name="school_1" id="school_1">
+                            <option value="default">-</option>
+                            <option value="katzenmaier">AJ Katzenmaier</option>
+                            <option value="greenbay">Greenbay</option>
+                            <option value="yeager">Howard A Yeager</option>
+                            <option value="hart">Marjorie P Hart</option>
+                            <option value="north">North Elementary</option>
+                            <option value="south">South Elementary</option>
+                        </select>
+                        <label for="school_2" class="impinfo">Second Closest School:</label>
+                        <select name="school_2" id="school_2">
+                            <option value="default">-</option>
+                            <option value="katzenmaier">AJ Katzenmaier</option>
+                            <option value="greenbay">Greenbay</option>
+                            <option value="yeager">Howard A Yeager</option>
+                            <option value="hart">Marjorie P Hart</option>
+                            <option value="north">North Elementary</option>
+                            <option value="south">South Elementary</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What position(s) do you normally play? <span class="note">(check all that apply)</span>
+                        </legend>
+                        <label for="n_forward">Forward</label>
+                        <input type="checkbox" name="normal_position" id="n_forward" value="n_forward" />
+                        <label for="n_defense">Defense</label>
+                        <input type="checkbox" name="normal_position" id="n_defense" value="n_defense" />
+                        <label for="n_midfield">Midfield</label>
+                        <input type="checkbox" name="normal_position" id="n_midfield" value="n_midfield" />
+                        <label for="n_goalkeeper">Goalkeeper</label>
+                        <input type="checkbox" name="normal_position" id="n_goalkeeper" value="n_goalkeeper" />
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What position(s) do you want to play? <span class="note">(check all that apply)</span>
+                        </legend>
+                        <label for="w_forward">Forward</label>
+                        <input type="checkbox" name="want_position" id="w_forward" value="w_forward" />
+                        <label for="w_defense">Defense</label>
+                        <input type="checkbox" name="want_position" id="w_defense" value="w_defense" />
+                        <label for="w_midfield">Midfield</label>
+                        <input type="checkbox" name="want_position" id="w_midfield" value="w_midfield" />
+                        <label for="w_goalkeeper">Goalkeeper</label>
+                        <input type="checkbox" name="want_position" id="w_goalkeeper" value="w_goalkeeper" />
+                    </fieldset>
+
+                    <label for="uniform" class="impinfo">Already Have a Uniform</label>
+                    <input type="checkbox" name="uniform" id="uniform" />
+
+                    <fieldset>
+                        <legend>Jersey Size:</legend>
+                        <span class="uniformchoice">
+                            <label for="j_y_small">Youth Small</label>
+                            <input type="radio" name="jersey_size" id="j_y_small" value="j_y_small" />
+                            <label for="j_y_medium">Youth Medium</label>
+                            <input type="radio" name="jersey_size" id="j_y_medium" value="j_y_medium" />
+                            <label for="j_y_large">Youth Large</label>
+                            <input type="radio" name="jersey_size" id="j_y_large" value="j_y_large" />
+                            <label for="j_small">Small</label>
+                            <input type="radio" name="jersey_size" id="j_small" value="j_small" />
+                            <label for="j_medium">Medium</label>
+                            <input type="radio" name="jersey_size" id="j_medium" value="j_medium" />
+                            <label for="j_large">Large</label>
+                            <input type="radio" name="jersey_size" id="j_large" value="j_large" />
+                            <label for="j_x_large">Extra-Large</label>
+                            <input type="radio" name="jersey_size" id="j_x_large" value="j_x_large" />
+                        </span>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Shorts Size:</legend>
+                        <span class="uniformchoice">
+                            <label for="s_y_small">Youth Small</label>
+                            <input type="radio" name="shorts_size" id="s_y_small" value="s_y_small" />
+                            <label for="s_y_medium">Youth Medium</label>
+                            <input type="radio" name="shorts_size" id="s_y_medium" value="s_y_medium" />
+                            <label for="s_y_large">Youth Large</label>
+                            <input type="radio" name="shorts_size" id="s_y_large" value="s_y_large" />
+                            <label for="s_small">Small</label>
+                            <input type="radio" name="shorts_size" id="s_small" value="s_small" />
+                            <label for="s_medium">Medium</label>
+                            <input type="radio" name="shorts_size" id="s_medium" value="s_medium" />
+                            <label for="s_large">Large</label>
+                            <input type="radio" name="shorts_size" id="s_large" value="s_large" />
+                            <label for="s_x_large">Extra-Large</label>
+                            <input type="radio" name="shorts_size" id="s_x_large" value="s_x_large" />
+                        </span>
+                    </fieldset>
+
+                    <h3>Permission to Play</h3>
+                    <p>
+                        I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by
+                        all
+                        the rules
+                        of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury
+                        associated with
+                        soccer and in consideration for the "League" accepting the registrant for its soccer programs
+                        and
+                        activities, I
+                        hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated
+                        personnel
+                        and
+                        volunteers, including the facilities used for practices and games, against any claim by or on
+                        behalf
+                        of the
+                        registrant as a result of the registrant's participation in the program and/or being transported
+                        to
+                        or from NYSL
+                        sponsored activities, which transportation.
+                    </p>
+                    <p>
+                        By entering my name below, I hereby agree and authorize the above. In addition, by entering my
+                        name
+                        below, I
+                        also acknowledge that I have read the cancellation policy and agree to its terms.
+                    </p>
+
+                    <div>
+                        <label for="signature" class="centerBlock">Parent/Guardian Signature:</label>
+                        <input type="text" name="signature" id="signature" class="centerBlock" />
+                        <label for="sig_date" class="centerBlock">Date:</label>
+                        <input type="date" name="sig_date" id="sig_date" class="centerBlock" />
+                        <button type="button" class="btn btn-primary">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="games" class="hidepages pages">
+            <div class="container-fluid">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                APRIL
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Teams</th>
+                                            <th>Location</th>
+                                            <th>Times</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td rowspan="2">9/01</td>
+                                        <td>U1 and U4</td>
+                                        <td>AJ Katzenmaier</td>
+                                        <td>9:30 a.m.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>U3 and U2</td>
+                                        <td>Greenbay</td>
+                                        <td>1:00 p.m.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">9/08</td>
+                                        <td>U5 and U6</td>
+                                        <td>Howard A Yeager</td>
+                                        <td>9:30 a.m.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>U6 and U1</td>
+                                        <td>Marjorie P Hart</td>
+                                        <td>1:00 p.m.</td>
+                                    <tr>
+                                        <td rowspan="2">9/15</td>
+                                        <td>U2 and U4</td>
+                                        <td>North</td>
+                                        <td>9:30 a.m.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>U3 and U5</td>
+                                        <td>AJ Katzenmaier</td>
+                                        <td>1:00 p.m.</td>
+                                    <tr>
+                                        <td rowspan="2">9/22</td>
+                                        <td>U1 and U3</td>
+                                        <td>South</td>
+                                        <td>9:30 a.m.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>U2 and U6</td>
+                                        <td>Howard A Yeager</td>
+                                        <td>1:00 p.m.</td>
+                                    <tr>
+                                        <td>9/29</td>
+                                        <td>U4 and U5</td>
+                                        <td>Greenbay</td>
+                                        <td>9:30 a.m.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                MAY
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Teams</th>
+                                            <th>Location</th>
+                                            <th>Times</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td rowspan="2">10/06</td>
+                                        <td>U2 and U5</td>
+                                        <td>Marjorie P Hart</td>
+                                        <td>9:30 a.m.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>U1 and U6</td>
+                                        <td>South</td>
+                                        <td>1:00 p.m.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">10/08</td>
+                                        <td>U3 and U4</td>
+                                        <td>Howard A Yeager</td>
+                                        <td>9:30 a.m.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>U5 and U1</td>
+                                        <td>Greenbay</td>
+                                        <td>1:00 p.m.</td>
+                                    <tr>
+                                        <td rowspan="2">10/20</td>
+                                        <td>U6 and U3</td>
+                                        <td>North</td>
+                                        <td>9:30 a.m.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>U2 and U4</td>
+                                        <td>Marjorie P Hart</td>
+                                        <td>1:00 p.m.</td>
+                                    <tr>
+                                        <td rowspan="2">10/27</td>
+                                        <td>U3 and U1</td>
+                                        <td>AJ Katzenmaier</td>
+                                        <td>9:30 a.m.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>U5 and U6</td>
+                                        <td>Howard A Yeager</td>
+                                        <td>1:00 p.m.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="hidepages pages">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 p-0 ">
+                        <div class="container verticalCenter">
+                            <p>Please email us at: <a class="email"
+                                    href="mailto:nysl@chisoccer.org">nysl@chisoccer.org</a>
+                            </p>
+                            <p>We will reply to your email as soon as we can.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 p-0">
+                        <!-- MAPS -->
+                        <div class="container-fluid p-0">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20573176.8069207!2d-105.70831712520109!3d41.535817759575885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sar!4v1621911009224!5m2!1sen!2sar"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="rules" class="hidepages pages">
+            <div class="container">
+                <h2>Northside Youth Soccer League</h2>
+                <h3>Rules of Play &amp; Policies</h3>
+                <p>FIFA rules shall govern NYSL play except as modified herein.</p>
+
+                <h2>Sportsmanship</h2>
+                <p>The common interest that members of the Association share is to inspire youth to
+                    practice the
+                    ideals
+                    of
+                    sportsmanship and fair play. Any player, coach, team, parent, spectator, administrator
+                    or
+                    referee
+                    whose behavior
+                    detracts from this purpose is subject to disciplinary action regardless of technical
+                    soccer
+                    background,
+                    expertise, accomplishments or standing.</p>
+
+                <h2>Fifa Field Regulations</h2>
+
+                <h3>Dimensions.</h3>
+                <p> FIFA Law 1 provides for flexible external field dimensions within a
+                    given
+                    maximum and
+                    minimum width and length. These dimensions should be adhered to for all fields used by
+                    teams
+                    under
+                    12 and older.
+                </p>
+
+                <h3>Competition Fields.</h3>
+                <p>Fields used within the competition program must be a
+                    minimum of 100
+                    x
+                    60 yards.
+                    Leagues, districts or associations participating in the state competition program that
+                    are
+                    unable to
+                    provide a
+                    field that meets these minimum requirements must advise the State Competition Board
+                    which will
+                    assign its Fields
+                    Committee to inspect the field and recommend to the Board whether or not a waiver of the
+                    minimum
+                    dimensions
+                    should be granted. Teams from leagues, districts or associations that are unable to
+                    provide an
+                    acceptable field
+                    may be required to play all their games away.
+                </p>
+                <h3>Fields Used By Young Age Groups.</h3>
+                <p>U-6 play on a field approximately 20 X 40 yards with no penalty areas. Fields
+                    for older
+                    age
+                    groups should
+                    be progressively larger.
+                    U-8 plays on a field 40-50 yards in length and 20-30 yards width.
+                    U-10 play on a field 70-80 yards in length and 40-50 yards in width.
+                    In addition, fields used by young age groups may have their internal dimensions
+                    and size
+                    of
+                    goal similarly
+                    modified.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <address class="m-0">
+            <p class="m-0"><strong>Phone:</strong> (630) 690-8132</p>
+            <p class="m-0 "><strong>Email:</strong>
+                <a class="email" href="mailto:michael.randall@chisoccer.org">michael.randall@chisoccer.org</a>
+            </p>
+        </address>
+    </footer>
+
+    <!-- ION-ICON CDN  -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <!-- Scripts Boostrap Bundle 5.0.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

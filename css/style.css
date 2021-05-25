@@ -1,0 +1,212 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+p{
+    padding-bottom: 5%;
+}
+
+h2{
+    color: #706fd3;
+    margin: 5% 0px;
+}
+
+.space, h3{
+    color: #222;
+    margin: 3% 0px;
+}
+
+body {
+    background-color: #f7f1e3;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+}
+
+/* upDownButton */
+#upDownButton{
+    text-align: center;
+    z-index: 999;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 100px;
+}
+
+.upDownButton{
+    width: 100%;
+    background-color: #2c2c54;
+    color: white;
+}
+
+.upDownButton:hover{
+    background-color: #40407a;
+    color: white;
+}
+
+#main{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 7% auto;
+}
+
+#header{
+    display: inline-flex;
+    min-width: 100%;
+    align-items: center;
+    background-color: #2f3640;
+    margin-top: 54px;
+}
+
+#logo{
+    max-width: 60%;
+}
+
+#titulo{
+    align-items: center;
+    font-size: 1.5em;
+    margin: 0px auto;
+    text-align: center;
+    padding: 5% 0px;
+    color: white;
+}
+
+#header>.container-fluid>.row>.col-6{
+    margin: auto 0px;
+}
+
+.col-3{
+    padding: 10px;
+}
+
+.col-6{
+    padding:0px;
+    text-align: center;
+}
+
+/* NAV */
+.navbar{
+    position: fixed;
+    z-index: 200;
+    top: 0px;
+    background-color: #30336b;
+    color: white;
+    width: 100%;
+}
+
+.navbar-nav{
+    margin: 0px auto;
+}
+
+.nav-link{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 90%;
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: white;
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+}
+
+/* FORM */
+.form-group{
+    margin: 0px auto;
+    width: 60%;
+}
+
+.hidepages{
+    display: none;
+}
+
+.accordion-body{
+    
+}
+
+table{
+    padding:0px;
+    margin: 0px auto;
+    border-collapse: collapse;
+}
+
+tr{
+    border: 2px solid grey;
+}
+
+td{
+     opacity: 0.8;
+     padding: 0px 1rem;
+}
+
+fieldset{
+    text-align: center;
+    justify-content: center;
+    padding:5% 0px;
+    border-bottom: 2px solid #222;
+}
+
+fieldset legend{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #706fd3 ;
+}
+
+.verticalCenter{
+    margin: 25% 0px;
+}
+
+#contact{
+    width: 100%;
+}
+
+.centerBlock{
+    display: block;
+    margin: 15px auto;
+    width: 40%;
+}
+
+#games{
+    width: 100%;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+.email{
+    text-decoration: none;
+    font-weight: bold;
+    color:#218c74;
+}
+
+.email:hover{
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 150px;
+    position: relative;
+    background-color: #30336b;
+    width: 100%;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    padding: 30px 0px;
+}
